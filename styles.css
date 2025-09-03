@@ -1,0 +1,51 @@
+/*Paul Fralix Sebastian's biosite css */
+/* CSD 340 Web Development with HTML and CSS */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #6EC1E4;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.portrait img, .image-grid img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+blockquote {
+  font-family: 'Roboto Slab', serif;
+  font-style: italic;
+  margin: 2rem;
+  text-align: center;
+}
