@@ -37,15 +37,57 @@ nav a {
   padding: 1rem;
 }
 
-.portrait img, .image-grid img {
-  max-width: 100%;
+.center-heading {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #333;
+  font-style: italic;
+}
+
+.portrait, .image-grid {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image-grid figcaption {
+  font-family: 'Roboto Slab', serif; 
+  display:block;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.image-grid img {
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.portrait img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.bio {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1rem;
+  line-height: 1.6;
+  font-style: italic;
 }
 
 blockquote {
   font-family: 'Roboto Slab', serif;
   font-style: italic;
-  margin: 2rem;
+  margin: 2rem auto;
   text-align: center;
 }
