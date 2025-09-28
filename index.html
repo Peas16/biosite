@@ -1,6 +1,7 @@
 <!--Paul Fralix biosite for Sebastian-->  
 <!--CSD 340 Web Development with HTML and CSS-->
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,45 +11,42 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>Sebastian</h1>
     <h2>The Explorer of Ideas</h2>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="https://www.crunchlabs.com/" target="_blank">CrunchLabs</a></li>
+        <li><a href="https://www.crunchlabs.com/" target="_blank" rel="noopener noreferrer">CrunchLabs</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h3 class="center-heading">Featured Goals & Achievements</h3>
+  <main role="main">
+    <section aria-labelledby="goals-heading">
+      <h3 id="goals-heading" class="center-heading">Sebastian's Goals & Achievements</h3>
       <div class="image-grid">
-    <figure>
-       <img src="images/cybertruck_toy.jpg" alt="Sebastian's dream: Tesla CyberTruck CyberBeast Edition">
-       <figcaption>Dreaming of the CyberTruck CyberBeast</figcaption>
-    </figure>
+        <figure>
+          <img src="images/cybertruck_toy.jpg" alt="Sebastian's dream: Tesla CyberTruck CyberBeast Edition toy model">
+          <figcaption>Sebastian Dreaming of the CyberTruck CyberBeast</figcaption>
+        </figure>
 
-    <figure>
-      <img src="images/bike_ride.jpg" alt="Sebastian riding his bike">
-      <figcaption>Exploring the world on two wheels</figcaption>
-    </figure>
+        <figure>
+          <img src="images/bike_ride.jpg" alt="Sebastian preparing to ride his bike outdoors">
+          <figcaption>Sebastian Exploring the world on two wheels</figcaption>
+        </figure>
 
-    <figure>
-      <img src="images/piano_lesson.jpg" alt="Sebastian at piano lesson">
-      <figcaption>Learning music, one key at a time</figcaption>
-    </figure>
-  </div>
-
-
+        <figure>
+          <img src="images/piano_lesson.jpg" alt="Sebastian practicing piano during a lesson">
+          <figcaption>Sebastian Learning music, one key at a time</figcaption>
+        </figure>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>Inspired by Sebastian’s curiosity and creativity</p>
+  <footer role="contentinfo">
+    <p>©2025 Sebastian’s bioSite/Inspired by Sebastian’s curiosity and creativity</p>
   </footer>
 </body>
 </html>

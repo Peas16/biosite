@@ -11,38 +11,46 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>About Sebastian</h1>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="https://www.crunchlabs.com/" target="_blank" rel="noopener noreferrer">CrunchLabs</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2 class="center-heading">Meet Sebastian</h2>
-      <div class="portrait">
-        <img src="images/sebastian_headshot.jpg" alt="Portrait of Sebastian">
-      </div>
-      <div class="bio">
-        <p>Sebastian is a curious and creative explorer of ideas. Whether he’s building futuristic vehicles out of LEGOs or diving into his latest Crunch Labs STEM kit, he’s always chasing the thrill of discovery. His favorite digital playground is Farming Simulator, where he manages crops, drives tractors, and learns the rhythms of rural life all from his Xbox.</p>
-        <p>At just 10 years old, Sebastian already dreams of becoming an aerospace engineer who designs electric vehicles and rockets. His fascination with the Tesla CyberTruck CyberBeast Edition reflects his love for bold design and cutting-edge technology. He’s constantly learning how motors work, how gears spin, and how energy flows, not just through books, but through hands-on experimentation.</p>
-        <p>Music is another outlet for his creativity. He takes piano lessons and is eager to learn guitar and drums, often imagining himself as a one-man band. Outdoors, he’s just as active riding his bike, swimming, and exploring nature with the same curiosity he brings to his projects.</p>
-        <p>Sebastian’s world is a blend of imagination and invention. He doesn’t just ask “why?”, he asks, “what if?” and then builds the answer. Whether it’s a LEGO remote control speed train or a STEM-powered coin spinner, his creations reflect a mind that’s always in motion.</p>
-        <p>He’s not just growing up; he’s growing into someone who will shape the future.
-        </p>
-      </div>
+  <main role="main">
+    <section aria-labelledby="meet-sebastian">
+      <h2 id="meet-sebastian" class="center-heading">Meet Sebastian</h2>
+
+      <figure class="portrait">
+        <img src="images/sebastian_headshot.jpg" alt="Smiling portrait of Sebastian in a STEM-themed shirt">
+        <figcaption>Curious, creative, and always exploring</figcaption>
+      </figure>
+
+      <article class="bio">
+        <p>Sebastian is a curious and creative explorer of ideas. Whether he’s building futuristic vehicles out of LEGOs or diving into his latest CrunchLabs STEM kit, he’s always chasing the thrill of discovery. His favorite digital playground is <strong>Farming Simulator</strong>, where he manages crops, drives tractors, and learns the rhythms of rural life—all from his Xbox.</p>
+
+        <p>At just 10 years old, Sebastian already dreams of becoming an aerospace engineer who designs electric vehicles and rockets. His fascination with the <em>Tesla CyberTruck CyberBeast Edition</em> reflects his love for bold design and cutting-edge technology. He’s constantly learning how motors work, how gears spin, and how energy flows—not just through books, but through hands-on experimentation.</p>
+
+        <p>Music is another outlet for his creativity. He takes piano lessons and is eager to learn guitar and drums, often imagining himself as a one-man band. Outdoors, he’s just as active—riding his bike, swimming, and exploring nature with the same curiosity he brings to his projects.</p>
+
+        <p>Sebastian’s world is a blend of imagination and invention. He doesn’t just ask “why?”—he asks, “what if?” and then builds the answer. Whether it’s a LEGO remote control speed train or a STEM-powered coin spinner, his creations reflect a mind that’s always in motion.</p>
+
+        <p>He’s not just growing up; he’s growing into someone who will shape the future.</p>
+      </article>
+
       <blockquote>
-        <h3>"What if we made a robot that could clean up LEGOs?"</h3>
+        <p><strong>"What if we made a robot that could clean up LEGOs?"</strong></p>
       </blockquote>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Sebastian’s bioSite</p>
+  <footer role="contentinfo">
+    <p>©2025 Sebastian’s bioSite/Inspired by Sebastian’s curiosity and creativity</p>
   </footer>
 </body>
 </html>

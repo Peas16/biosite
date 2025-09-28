@@ -1,6 +1,7 @@
 <!--Paul Fralix biosite for Sebastian-->  
 <!--CSD 340 Web Development with HTML and CSS-->
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,44 +11,52 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <header role="banner">
     <h1>Sebastian’s Hobbies</h1>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="https://www.crunchlabs.com/" target="_blank" rel="noopener noreferrer">CrunchLabs</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2 class="center-heading">His Creative Explorations</h2>
+  <main role="main">
+    <section aria-labelledby="creative-explorations">
+      <h2 id="creative-explorations" class="center-heading">Sebastian's Creative Explorations</h2>
       <div class="image-grid">
+
         <figure>
-          <figcaption>Farming Simulator</figcaption>
-          <img src="images/farming_simulator.jpg" alt="Sebastian playing Farming Simulator">
-          <figcaption>Sebastian's Digital Farm Life.</figcaption>
-          <figcaption>Driving tractors and planting crops.</figcaption>
+          <img src="images/farming_simulator.jpg" alt="Sebastian playing Farming Simulator, driving tractors and planting crops">
+          <figcaption>
+            <strong>Farming Simulator</strong><br>
+            Sebastian's Digital Farm Life—driving tractors and planting crops.
+          </figcaption>
         </figure>
 
         <figure>
-          <figcaption>LEGO Speed Train</figcaption>
-          <img src="images/lego_speed_train.jpg" alt="Sebastian's LEGO Speed Train">
-          <figcaption>Built with imagination and engineering flair.</figcaption>
+          <img src="images/lego_speed_train.jpg" alt="Sebastian's LEGO Speed Train built with engineering flair">
+          <figcaption>
+            <strong>LEGO Speed Train</strong><br>
+            Built with imagination and engineering flair.
+          </figcaption>
         </figure>
 
         <figure>
-          <figcaption>CrunchLabs STEM Kit</figcaption>
-          <img src="images/crunchlabs_kit.jpg" alt="Sebastian with CrunchLabs STEM Kit">
-          <figcaption>Hands-on learning with high-speed spinners and gear systems.</figcaption>
+          <img src="images/crunchlabs_kit.jpg" alt="Sebastian using CrunchLabs STEM Kit with spinners and gears">
+          <figcaption>
+            <strong>CrunchLabs STEM Kit</strong><br>
+            Hands-on learning with high-speed spinners and gear systems.
+          </figcaption>
         </figure>
+
       </div>
-     </section>
+    </section>
   </main>
 
-  <footer>
-    <p>Powered by play, curiosity, and CrunchLabs kits</p>
+  <footer role="contentinfo">
+    <p>©2025 Sebastian’s bioSite/Powered by play, curiosity, and CrunchLabs kits</p>
   </footer>
 </body>
 </html>
